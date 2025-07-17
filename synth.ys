@@ -1,0 +1,18 @@
+read_verilog carry_look_ahead_generator.v
+read_verilog adder_subtractor_4bit.v
+read_verilog alu_4bit.v
+read_verilog comparator_16bit.v
+read_verilog multiplier_16bit.v
+read_verilog alu_16bit.v
+
+hierarchy -top alu_16bit
+
+synth -top alu_16bit
+
+opt #logic optimisation
+abc #logic mapping
+
+write_verilog alu_16bit_synth_opt.v
+ 
+write_blif alu_16bit.blif # blif file used by optimisers like abc
+write_json alu_16bit.json #json file used for gui visualisation
