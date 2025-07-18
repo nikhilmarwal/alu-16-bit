@@ -3,7 +3,7 @@
 ## Description
 This project implements a **16-bit Arithmetic Logic Unit (ALU)** in Verilog. The ALU supports arithmetic, logic, shift, and comparison operations using modular design, including:
 
-- A 4-bit ALU block
+- Four 4-bit ALU block
 - Carry Lookahead Generator
 - 16-bit Multiplier
 - 16-bit Comparator
@@ -35,7 +35,7 @@ The project also includes testbenches and is synthesized using **Yosys** with lo
 | `alu_16bit.v` | Top-level ALU module |
 | `test16bit.v` | Testbench covering all opcodes |
 | `alu_16bit_opt.v` | Synthesized & optimized Verilog |
-| `netlist.json` / `.blif` | Gate-level netlist (optional) |
+
 
 ---
 
